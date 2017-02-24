@@ -1,0 +1,53 @@
+homeassistant:
+  name: Home
+  temperature_unit: C
+  time_zone: Europe/Prague
+  latitude: 49.5274
+  longitude: 12.9413
+  customize:
+    ## Default View ##
+    # Television #
+    media_player.samsung_smart_tv:
+      icon: mdi:television
+    input_select.channel:
+      icon: mdi:television-guide
+
+group:
+  Home:
+    - group.living_room
+  living_room:
+    - media_player.samsung_smart_tv
+
+media_player:
+  - platform: samsungtv
+    host: 172.70.32.138
+    name: Samsung Smart TV
+
+sensor:
+  platform: systemmonitor
+  resources:
+    - type: 'disk_use_percent'
+      arg: '/'
+    - type: 'disk_use_percent'
+      arg: '/home'
+    - type: 'disk_use'
+      arg: '/home'
+    - type: 'disk_free'
+      arg: '/'
+    - type: 'memory_use_percent'
+    - type: 'memory_use'
+    - type: 'memory_free'
+    - type: 'processor_use'
+    - type: 'process'
+      arg: 'octave-cli'
+
+#discovery:
+sun:
+frontend:
+
+conversation:
+
+history:
+
+logbook:
+

@@ -1,0 +1,1 @@
+nas_off: 'ssh root@172.70.32.221 shutdown -h now'

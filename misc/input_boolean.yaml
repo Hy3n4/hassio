@@ -1,0 +1,7 @@
+tv:
+  name: TV
+  initial: off
+  icon: mdi:TV
+ha_uptime:
+  name: Home Assistant Uptime
+  initial: on

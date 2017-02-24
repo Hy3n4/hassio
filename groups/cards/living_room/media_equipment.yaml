@@ -1,0 +1,7 @@
+media_equipment_card:
+  name: Media Equipment
+  view: yes
+  icon: mdi:television
+  entities:
+    - media_player.samsung_smart_tv_living_room
+    - media_player.apple_tv

@@ -1,0 +1,11 @@
+platform: synologydsm
+host: 172.70.32.221
+port: 5000
+username: admin
+password: Password.
+monitored_conditions:
+  - cpu_total_load
+  - memory_real_usage
+  - network_up
+  - volume_status
+  - disk_status

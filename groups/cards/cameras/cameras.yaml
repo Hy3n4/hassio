@@ -1,0 +1,5 @@
+skodaland_prehrada_card:
+  view: yes
+  name: Cameras
+  entities:
+    - camera.skodaland_u_prehrady
