@@ -1,3 +1,4 @@
 platform: eq3btsmart
 devices:
+  room1:
   mac: !secret thermostat_mac
