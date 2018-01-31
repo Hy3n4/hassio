@@ -31,6 +31,7 @@ sun:
 ios:
 
 zone: !include_dir_list zones/
+climate: !include_dir_list climate/
 weather: !include_dir_list weather/
 sensor: !include_dir_list sensors/
 switch: !include_dir_list switches/
