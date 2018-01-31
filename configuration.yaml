@@ -24,6 +24,8 @@ logbook:
 logger:
   default: info
 
+config:
+
 sun:
 
 ios:
