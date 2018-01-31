@@ -4,12 +4,12 @@ homeassistant:
   time_zone: Europe/Prague
   latitude: !secret home_latitude
   longitude: !secret home_longitude
-  elevation: 344
+  elevation: !secret elevation
 
 frontend:
 
 http:
-  api_password: 5069200596
+  api_password: !secret http_password
   
 updater:
 
@@ -33,67 +33,18 @@ weather: !include_dir_list weather/
 sensor: !include_dir_list sensors/
 switch: !include_dir_list switches/
 shell_command: !include misc/shell_commands.yaml
-
-#  - platform: synologydsm
-#    host: 172.70.32.221
-#    username: admin
-#    password: Password.
-#    monitored_conditions:
-#      - cpu_total_load
-#      - memory_real_usage
-#      - network_up
-#      - volume_status
-#      - disk_status
-#  - platform: speedtest
-#    monitored_conditions:
-#      - ping
-#      - download
-#      - upload
-
 camera: !include_dir_list cameras/
 group: !include_dir_merge_named groups/
-#  Home:
-#    - group.living_room    
-#  
-#  Outside:
-#    view: yes
-#    name: Outside
-#    icon: mdi:white-balance-sunny
-#    entities:
-#      - sensor.yr_symbol
-#      - sensor.yr_temperature
-#  Media_Players:
-#    view: yes
-#    name: Media Players
-#    entities:
-#      - media_player.samsung_smart_tv_living_room
-#      - media_player.apple_tv
-#  Cameras:
-#    view: yes
-#    name: Cameras
-#    entities:
-#      - camera.skodaland_u_prehrady
-
 media_player:
   - platform: samsungtv
-    host: 172.70.32.115
+    host: !secret samsung_ip
     name: Samsung Smart TV Living Room
   - platform: plex
   - platform: apple_tv
-    host: 172.70.32.197
+    host: !secret apple_tv_ip
     login_id: !secret apple_tv_login_id
 
 automation:
-#  - alias: "Turn TV Off when leaving Home"
-#    trigger: 
-#      - platform: state
-#        entity_id: group.all_devices
-#        from: "home"
-#        to: "not_home"
-#    action:
-#      service: media_player.turn_off
-#      entity_id: media_player.samsung_smart_tv_living_room
-
   - alias: 'Update Available Notifications'
     trigger:
       platform: state

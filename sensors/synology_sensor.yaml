@@ -1,8 +1,8 @@
 platform: synologydsm
-host: 172.70.32.221
-port: 5000
-username: admin
-password: Password.
+host: !secret nas_ip
+port: !secret nas_port
+username: !secret nas_username
+password: !secret nas_password
 monitored_conditions:
   - cpu_total_load
   - memory_real_usage
