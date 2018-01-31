@@ -19,9 +19,6 @@ conversation:
 
 history:
 
-recorder:
-  purge_days: 7
-  
 logbook:
 
 logger:
