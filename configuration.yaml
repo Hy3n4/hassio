@@ -30,6 +30,8 @@ sun:
 
 map:
 
+customize: !include customize.yaml
+
 mqtt:
   broker: !secret mqtt_ip
 
