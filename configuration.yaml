@@ -30,6 +30,9 @@ sun:
 
 map:
 
+mqtt:
+  broker: !secret mqtt_ip
+
 ios:
 
 zone: !include_dir_list zones/
