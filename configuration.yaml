@@ -45,7 +45,8 @@ shell_command: !include misc/shell_commands.yaml
 camera: !include_dir_list cameras/
 group: !include_dir_merge_named groups/
 media_player: !include_dir_list media/
-homekit: !include homekit/homekit.yaml
+homekit:
+  pincode: '457-36-926'
 
 automation:
   - alias: 'Update Available Notifications'
