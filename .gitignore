@@ -12,6 +12,7 @@ lib
 deps
 tts
 secrets.yaml
+secret.yaml
 known_devices.yaml
 *.conf
 plex.conf
