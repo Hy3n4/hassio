@@ -46,6 +46,7 @@ media_player:
   - platform: apple_tv
     host: !secret apple_tv_ip
     login_id: !secret apple_tv_login_id
+    start_off: true
 
 automation:
   - alias: 'Update Available Notifications'
