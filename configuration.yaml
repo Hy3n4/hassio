@@ -5,6 +5,7 @@ homeassistant:
   latitude: !secret home_latitude
   longitude: !secret home_longitude
   elevation: !secret elevation
+  customize: !include customize.yaml
 
 frontend:
 
@@ -29,8 +30,6 @@ config:
 sun:
 
 map:
-
-customize: !include customize.yaml
 
 mqtt:
   broker: !secret mqtt_ip
