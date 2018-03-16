@@ -1,4 +1,4 @@
 platform: apple_tv
-  host: !secret apple_tv_ip
-  login_id: !secret apple_tv_login_id
-  start_off: true
+host: !secret apple_tv_ip
+login_id: !secret apple_tv_login_id
+start_off: true
