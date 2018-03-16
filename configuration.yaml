@@ -38,15 +38,7 @@ switch: !include_dir_list switches/
 shell_command: !include misc/shell_commands.yaml
 camera: !include_dir_list cameras/
 group: !include_dir_merge_named groups/
-media_player:
-  - platform: samsungtv
-    host: !secret samsung_ip
-    name: Samsung Smart TV Living Room
-  - platform: plex
-  - platform: apple_tv
-    host: !secret apple_tv_ip
-    login_id: !secret apple_tv_login_id
-    start_off: true
+media_player: !include_dir_list media/
 
 automation:
   - alias: 'Update Available Notifications'

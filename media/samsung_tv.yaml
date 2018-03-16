@@ -1,0 +1,3 @@
+platform: samsungtv
+  host: !secret samsung_ip
+  name: Samsung Smart TV Living Room
