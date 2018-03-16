@@ -45,6 +45,7 @@ shell_command: !include misc/shell_commands.yaml
 camera: !include_dir_list cameras/
 group: !include_dir_merge_named groups/
 media_player: !include_dir_list media/
+homekit: !include homekit/homekit.yaml
 
 automation:
   - alias: 'Update Available Notifications'
