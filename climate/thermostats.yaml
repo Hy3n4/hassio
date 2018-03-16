@@ -2,3 +2,4 @@ platform: sygonix
 devices:
   living_room:
     mac: !secret thermo_living_room_mac
+    name: Living Room Heating Unit
