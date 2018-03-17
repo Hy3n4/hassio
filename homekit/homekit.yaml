@@ -1,1 +1,1 @@
-pincode: '457-36-926'
+pincode: !secret homekit_pin
