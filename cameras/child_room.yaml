@@ -1,0 +1,3 @@
+name: Child Room
+platform: mjpeg
+mjpeg_url: !secret child_room_ip_cam_url
