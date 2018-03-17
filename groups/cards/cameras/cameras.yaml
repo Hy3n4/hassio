@@ -3,3 +3,4 @@ skodaland_prehrada_card:
   name: Cameras
   entities:
     - camera.skodaland_u_prehrady
+    - camera.child_room
