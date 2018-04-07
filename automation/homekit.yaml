@@ -1,4 +1,4 @@
-alias: 'Start HomeKit'
+- alias: 'Start HomeKit'
   trigger:
     - platform: homeassistant
       event: start
