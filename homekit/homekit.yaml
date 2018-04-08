@@ -1,2 +1,1 @@
-pincode: !secret homekit_pin
 auto_start: False
