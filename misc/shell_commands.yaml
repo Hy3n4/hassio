@@ -1,1 +1,1 @@
-nas_off: 'ssh root@172.70.32.221 shutdown -h now'
+nas_off: 'ssh -i /home/homeassistant/.ssh/id_rsa root@172.70.32.221 shutdown -h now'

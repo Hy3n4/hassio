@@ -24,6 +24,9 @@ logbook:
 
 logger:
   default: warning
+  logs:
+    homeassistant.components.homekit: debug
+    pyhap: debug
 
 config:
 
