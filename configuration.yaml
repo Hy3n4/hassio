@@ -23,7 +23,10 @@ history:
 logbook:
 
 logger:
-  default: info
+  default: warning
+  logs:
+    homeassistant.components.homekit: debug
+    pyhap: debug
 
 config:
 
