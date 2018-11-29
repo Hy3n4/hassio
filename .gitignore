@@ -20,4 +20,5 @@ phue.conf
 harmony_media_room.conf
 pyozw.sqlite
 .*
+__pycache__
 !/.gitignore
