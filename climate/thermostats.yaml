@@ -1,4 +1,0 @@
-platform: sygonix
-devices:
-  living_room:
-    mac: !secret thermo_living_room_mac

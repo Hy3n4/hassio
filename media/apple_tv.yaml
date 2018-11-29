@@ -1,4 +1,6 @@
 platform: apple_tv
 host: !secret apple_tv_ip
 login_id: !secret apple_tv_login_id
+name: Apple TV
+credentials: !secret apple_tv_cred
 start_off: true

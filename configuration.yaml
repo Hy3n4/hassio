@@ -6,6 +6,9 @@ homeassistant:
   longitude: !secret home_longitude
   elevation: !secret elevation
   customize: !include customize.yaml
+  auth_providers:
+    - type: homeassistant
+    - type: legacy_api_password
 
 frontend:
 
@@ -25,8 +28,11 @@ logbook:
 logger:
   default: warning
   logs:
-    homeassistant.components.homekit: debug
-    pyhap: debug
+#    homeassistant.components.homekit: debug
+    homeassistant.components.climate: debug
+    custom_components.climate.cometblue: debug
+    cometblue.device: debug
+#    pyhap: debug
 
 config:
 
@@ -34,8 +40,8 @@ sun:
 
 map:
 
-mqtt:
-  broker: !secret mqtt_ip
+#mqtt:
+#  broker: !secret mqtt_ip
 
 ios:
 
