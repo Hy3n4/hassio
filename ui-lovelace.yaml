@@ -80,6 +80,10 @@ views:
           - switch.nas
           - climate.living_room_cb
         camera_image: camera.child_room
+      - id: cc
+        type: picture-glance
+        title: Child Room ONVif
+        camera_image: camera.child_room_onvif
       - id: 8f6f0e23a73e4aaf958f79fcfd412361  # Automatically created id
         type: picture-entity
         title: SkodaLand u Prehrady
