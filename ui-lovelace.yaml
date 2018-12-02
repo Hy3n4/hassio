@@ -53,6 +53,7 @@ views:
       - id: 3ce1555867f0487dae7b0a8a1709cca8  # Automatically created id
         type: entity-button
         entity: switch.nas
+        icon: nas
 #      - type: thermostat
 #        entity: climate.living_room
       - id: 6214e250582a4152baadaa19d4346129  # Automatically created id
