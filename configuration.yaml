@@ -29,6 +29,7 @@ logger:
   default: error
   logs:
 #    homeassistant.components.homekit: debug
+    homeassistant.components.camera: debug
     homeassistant.components.climate: debug
     custom_components.climate.cometblue: debug
 #    cometblue.device: debug
