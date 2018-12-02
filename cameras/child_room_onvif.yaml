@@ -1,0 +1,4 @@
+name: Child Room Onvif
+platform: onvif
+mjpeg_url: !secret child_room_ip_cam
+port: !secret child_room_ip_onvif_port
