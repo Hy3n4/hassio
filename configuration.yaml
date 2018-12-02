@@ -45,6 +45,7 @@ map:
 
 ios:
 
+ffmpeg:
 zone: !include_dir_list zones/
 climate: !include_dir_list climate/
 weather: !include_dir_list weather/
