@@ -1,0 +1,8 @@
+homekit:
+  filter:
+    include_domains:
+      - media_player
+      - climate
+    exclude_entities:
+      - automation.start_homekit
+      - automation.update_available_notifications

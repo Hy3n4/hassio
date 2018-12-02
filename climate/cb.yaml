@@ -1,5 +1,4 @@
 platform: cometblue
-name: Living Room Test
 devices:
   living_room_cb:
     mac: !secret thermo_living_room_mac
