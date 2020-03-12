@@ -1,0 +1,4 @@
+platform: wake_on_lan
+name: MAXNAS02
+mac: !secret maxnas_mac
+host: !secret maxnas_ip
