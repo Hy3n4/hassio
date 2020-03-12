@@ -1,1 +1,27 @@
-[]
+- id: '1569351595215'
+  alias: Zavarovani
+  trigger:
+  - above: '85'
+    below: '83'
+    entity_id: sensor.outside_temperature
+    platform: numeric_state
+  condition: []
+  action:
+  - alias: ''
+    data:
+      message: Check the temperature!
+    service: notify.notify
+- id: '1576103861463'
+  alias: Movement in the BatCave
+  description: ''
+  trigger:
+  - entity_id: binary_sensor.pir_sensor
+    for: 00:00:05
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition: []
+  action:
+  - alias: ''
+    data: {}
+    service: notify.mobile_app_hy3n4s_iphone

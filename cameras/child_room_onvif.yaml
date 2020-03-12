@@ -4,3 +4,4 @@ host: !secret child_room_ip_cam
 port: !secret child_room_onvif_port
 username: !secret child_room_ip_cam_user
 password: !secret child_room_ip_cam_pass
+extra_arguments: -rtsp_transport tcp

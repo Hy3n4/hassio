@@ -1,6 +1,6 @@
 platform: wake_on_lan
-name: NAS
-mac_address: !secret nas_mac
+name: HOMENAS
+mac: !secret nas_mac
 host: !secret nas_ip
 turn_off: 
   service: shell_command.nas_off

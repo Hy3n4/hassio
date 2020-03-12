@@ -1,3 +1,4 @@
 platform: samsungtv
-host: !secret samsung_ip
+host: !secret samsungtv_ip
+mac: !secret samsungtv_mac
 name: Samsung Smart TV Living Room

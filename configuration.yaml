@@ -8,16 +8,21 @@ homeassistant:
   customize: !include customize.yaml
   auth_providers:
     - type: homeassistant
-    - type: legacy_api_password
+#    - type: legacy_api_password
+mobile_app:
 
 frontend:
 
 http:
-  api_password: !secret http_password
-  
+  use_x_forwarded_for: true
+  trusted_proxies: 127.0.0.1
+#  api_password: !secret http_password
+
 updater:
 
 discovery:
+
+system_health:
 
 conversation:
 
@@ -28,10 +33,14 @@ logbook:
 logger:
   default: error
   logs:
+    zeep.asyncio.transport: debug
+    haffmpeg: debug
 #    homeassistant.components.homekit: debug
     homeassistant.components.camera: debug
-    homeassistant.components.climate: debug
-    custom_components.climate.cometblue: debug
+    homeassistant.components.onvif.camera: debug
+#    homeassistant.components.climate: debug
+#    custom_components.climate.cometblue: debug
+    homeassistant.components.http.ban: warning
 #    cometblue.device: debug
 #    pyhap: debug
 
@@ -57,4 +66,5 @@ camera: !include_dir_list cameras/
 group: !include_dir_merge_named groups/
 media_player: !include_dir_list media/
 homekit: !include homekit/homekit.yaml
-automation: !include_dir_merge_list automation/
+#automation: !include_dir_merge_list automation/
+automation: !include automations.yaml
