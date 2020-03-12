@@ -1,0 +1,11 @@
+platform: synologydsm
+host: !secret homenas02_ip
+port: !secret homenas02_port
+username: !secret homenas02_username
+password: !secret homenas02_password
+monitored_conditions:
+  - cpu_total_load
+  - memory_real_usage
+  - network_up
+  - volume_status
+  - disk_status

@@ -1,8 +1,8 @@
 platform: synologydsm
-host: !secret nas_ip
-port: !secret nas_port
-username: !secret nas_username
-password: !secret nas_password
+host: !secret homenas01_ip
+port: !secret homenas01_port
+username: !secret homenas01_username
+password: !secret homenas01_password
 monitored_conditions:
   - cpu_total_load
   - memory_real_usage

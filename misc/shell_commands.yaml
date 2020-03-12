@@ -1,1 +1,2 @@
-nas_off: 'ssh -i /home/homeassistant/.ssh/id_rsa admin@172.70.32.221 sudo shutdown -h now'
+homenas01_off: !secret homenas01_off
+homenas02_off: !secret homenas02_off
