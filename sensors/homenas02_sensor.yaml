@@ -1,6 +1,6 @@
 platform: synologydsm
 host: !secret homenas02_ip
-port: !secret homenas02_port
+#port: !secret homenas02_port
 username: !secret homenas02_username
 password: !secret homenas02_password
 monitored_conditions:
